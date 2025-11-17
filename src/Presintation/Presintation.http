@@ -1,0 +1,6 @@
+@Presintation_HostAddress = https://localhost:7192;
+
+GET {{Presintation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
