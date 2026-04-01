@@ -34,3 +34,11 @@ A full-featured Customer Relationship Management (CRM) system to manage customer
 1. Clone the repo
 ```bash
 git clone https://github.com/ashrafelghandour/CRM
+
+## user credentials
+
+
+- * 👑 Super Admin: superadmin@company.com / Admin123! (كل الصلاحيات)
+- * 👨‍💼 Salesman: mohamed.sales@company.com / Sales123! (إدارة المبيعات)
+- * 👩‍💼 Employee: khaled.support@company.com / Employee123! (الدعم الفني)
+
