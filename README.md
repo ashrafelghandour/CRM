@@ -1,42 +1,44 @@
-# CRM
-# User Options 
-## Roles 
-* 👑 Super Admin: (كل الصلاحيات)
-* 👨‍💼 Salesman:  (إدارة المبيعات)
-* 👩‍💼 Employee:(الدعم الفني)
-
 # 💼 CRM System
 
+<p align="center">
+  <img src="https://img.shields.io/badge/.NET-Backend-blue" />
+  <img src="https://img.shields.io/badge/C%23-Language-green" />
+  <img src="https://img.shields.io/badge/SQL%20Server-Database-red" />
+</p>
+
+---
+
 ## 📌 Overview
-A full-featured Customer Relationship Management (CRM) system to manage customers, leads, and business workflows.
+A scalable Customer Relationship Management (CRM) system designed to manage customers, leads, and business workflows efficiently.
+
+---
 
 ## ✨ Features
-- Customer & Lead Management
-- Role-based Access Control
-- Authentication & Authorization
-- Business Workflow Handling
+✔ Customer & Lead Management  
+✔ Role-Based Access Control  
+✔ Secure Authentication (JWT)  
+✔ Business Workflow Automation  
+
+---
 
 ## 🛠 Tech Stack
-- ASP.NET Core
-- C#
-- Entity Framework Core
-- SQL Server
+- ASP.NET Core  
+- C#  
+- Entity Framework Core  
+- SQL Server  
 
-## 🔐 Authentication
-- JWT-based Authentication
-- Role-based Authorization
+---
 
-## 🗄 Database
-- Designed relational database using SQL Server
-- Optimized relationships for scalability
+## 🔐 Security
+- JWT Authentication  
+- Role-based Authorization  
 
-## user credentials
-- * 👑 Super Admin: superadmin@company.com / Admin123! (كل الصلاحيات)
-- * 👨‍💼 Salesman: mohamed.sales@company.com / Sales123! (إدارة المبيعات)
-- * 👩‍💼 Employee: khaled.support@company.com / Employee123! (الدعم الفني)
+---
 
-## ⚙️ How to Run
-1. Clone the repo
-```bash
-git clone https://github.com/ashrafelghandour/CRM
+## 🗄 Database Design
+- Relational Database (SQL Server)  
+- Optimized relationships for performance  
 
+---
+
+## 📂 Project Structure
