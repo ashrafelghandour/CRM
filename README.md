@@ -45,8 +45,4 @@ A scalable Customer Relationship Management (CRM) system designed to manage cust
 - * 👑 Super Admin: superadmin@company.com / Admin123! (كل الصلاحيات)
 - * 👨‍💼 Salesman: mohamed.sales@company.com / Sales123! (إدارة المبيعات)
 - * 👩‍💼 Employee: khaled.support@company.com / Employee123! (الدعم الفني)
----
-## 📂 Project Structure
-- Services/
-- Models/
-- Data/
+
