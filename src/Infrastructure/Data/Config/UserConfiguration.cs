@@ -46,6 +46,15 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .IsRequired()
             .HasDefaultValue(true);
 
+        builder.Property(u => u.LastLogin);
+            builder.Property(u => u.RefreshTokenHash)
+                .HasMaxLength(255);
+
+        builder.Property(u => u.RefreshTokenExpiryAt);
+        builder.Property(u => u.RefreshTokenRevokedAt); 
+
+        
+
         // Indexes
         builder.HasIndex(u => u.Email)
             .IsUnique();

@@ -50,6 +50,10 @@ public class UserService : IUserService
         existingUser.LastName = user.LastName;
         existingUser.Phone = user.Phone;
         existingUser.UpdateAt = DateTime.Now;
+        existingUser.RefreshTokenExpiryAt = user.RefreshTokenExpiryAt;
+        existingUser.RefreshTokenHash = user.RefreshTokenHash;
+        existingUser.RefreshTokenRevokedAt = user.RefreshTokenRevokedAt;
+        
 
         await _userRepository.UpdateAsync(existingUser);
         return true;

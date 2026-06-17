@@ -23,7 +23,6 @@ public class TokenService :ITokenService
         var secretKey = jwtSettings["Secret"] ?? "";
         var issuer = jwtSettings["Issuer"] ?? "https://localhost:7192";
         var audience = jwtSettings["Audience"] ?? "https://localhost:7192";
-
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
@@ -33,7 +32,8 @@ public class TokenService :ITokenService
             new Claim(ClaimTypes.Email, user.Email),
             new Claim(ClaimTypes.Role, user.Role.ToString()),
             new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}"),
-            new Claim("UserType", user.GetType().Name)
+            new Claim("UserType", user.GetType().Name),
+            new Claim("RefreshTokenRevokedAt", user.RefreshTokenRevokedAt?.ToString("yyyy-MM-ddTHH:mm:ssZ") ?? string.Empty)
         };
 
         var token = new JwtSecurityToken(

@@ -15,10 +15,10 @@ namespace Domain.Entities
         public int CreatedById { get; set; }
         
         // Navigation properties
-        public virtual Customer Customer { get; set; } = null!;
-        public virtual SystemUser? AssignedTo { get; set; }
-        public virtual User CreatedBy { get; set; } = null!;
-        public virtual ICollection<TicketComment>? Comments { get; set; }
+        public  Customer Customer { get; set; } = null!;
+        public  SystemUser? AssignedTo { get; set; }
+        public  User CreatedBy { get; set; } = null!;
+        public  ICollection<TicketComment>? Comments { get; set; }
 
     }
 }

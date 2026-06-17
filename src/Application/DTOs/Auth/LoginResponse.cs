@@ -7,7 +7,8 @@ namespace Application.DTOs.Auth
        [Required] string FullName ,
        [Required , EmailAddress] string Email,
        [Required] string Role,
-       [Required] DateTime Expiration 
+       [Required] DateTime Expiration ,
+         [Required] string RefreshToken
        );
 
        }

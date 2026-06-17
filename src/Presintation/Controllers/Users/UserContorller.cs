@@ -7,6 +7,7 @@ using Infrastructure.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Presintation.Filters;
 using WebAPI.Controllers;
 
 namespace Presintation.Controllers.Users;
@@ -20,17 +21,16 @@ namespace Presintation.Controllers.Users;
         _userService = userService;
        }
        [HttpGet]     
-
        public async Task<IActionResult> GetAllUsers()
         { 
                 try{
                 if(GetUserRole()!=UserRole.SuperAdmin.ToString())
-                    return HandleError("Access denied",4003);
+                    return HandleError("Access denied",403);
 
                     var users = await _userService.GetAllUserAsync();
                     
                     if(users is null || users.Any()==false)
-                    return HandleError("Not have any users",4004);
+                    return HandleError("Not have any users",404);
                     
                     IEnumerable<UserResponseDTO> dTO = users.Select( u => new UserResponseDTO(
                         u.Id,u.FirstName,
@@ -68,7 +68,7 @@ namespace Presintation.Controllers.Users;
                         var u = await _userService.GetUserByIdAsync(id);
                         
                         if(u is null )
-                        return HandleError("User not found",4004);
+                        return HandleError("User not found",404);
                         
                         UserResponseDTO dTO = new UserResponseDTO(
                             u.Id,
@@ -190,6 +190,7 @@ namespace Presintation.Controllers.Users;
     }
 
     [HttpDelete("{id}")]
+
     public async Task<IActionResult> DeleteUser(int id)
     {
         try

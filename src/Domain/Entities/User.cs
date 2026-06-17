@@ -16,5 +16,9 @@ namespace Domain.Entities
         public string Phone = string.Empty;
         public UserRole Role  {get;set;}
         public DateTime? LastLogin{get;set;}
+        public string RefreshTokenHash { get; set; } = string.Empty;
+        public DateTime? RefreshTokenExpiryAt { get; set; }
+        public DateTime? RefreshTokenRevokedAt { get; set; }
+
     }
 }

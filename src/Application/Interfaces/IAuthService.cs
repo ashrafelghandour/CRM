@@ -9,6 +9,7 @@ namespace Application.Interfaces
         Task<User?> AuthenticateAsync(string email,string passwored);
         Task<bool> ChangePassworedAsync(int userid,string CurrentPasswored,string newPasswored);
         Task<string> GenerateJwtTokenAsync(User user);
+        Task<string> GenerateRefreshTokenAsync(string email,string refreshToken);
     
     }
     public interface ITokenService

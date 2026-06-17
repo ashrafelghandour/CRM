@@ -8,6 +8,7 @@
 /Users/william 1/Desktop/CRM/src/Presintation/bin/Debug/net9.0/Presintation.pdb
 /Users/william 1/Desktop/CRM/src/Presintation/bin/Debug/net9.0/Azure.Core.dll
 /Users/william 1/Desktop/CRM/src/Presintation/bin/Debug/net9.0/Azure.Identity.dll
+/Users/william 1/Desktop/CRM/src/Presintation/bin/Debug/net9.0/BCrypt.Net-Next.dll
 /Users/william 1/Desktop/CRM/src/Presintation/bin/Debug/net9.0/Humanizer.dll
 /Users/william 1/Desktop/CRM/src/Presintation/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/william 1/Desktop/CRM/src/Presintation/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll

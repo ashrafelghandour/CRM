@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace Application.DTOs.Auth
 {
     public record LoginRequest(
-        [Required ,EmailAddress] string Email,
-        [Required] string Passwored
+        [Required ,EmailAddress] string Email
+        ,[Required] string Passwored
     );
 
        }

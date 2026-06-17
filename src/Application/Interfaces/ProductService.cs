@@ -1,31 +1,6 @@
 using Domain.Entities;
-using Application.DTOs.Products;
-using Application.DTOs.Offerings;
 
 namespace Application.Interfaces;
-
-public interface IProductService
-{
-    Task<Product?> GetProductByIdAsync(int id);
-    Task<IEnumerable<Product>> GetAllProductsAsync();
-    Task<Product> CreateProductAsync(CreateProductRequest request, string createdBy);
-    Task<bool> UpdateProductAsync(Product product);
-    Task<bool> DeleteProductAsync(int id);
-    Task<bool> UpdateProductStockAsync(int productId, int newStockQuantity);
-
-}
-
-
-public interface IOfferingService
-{Task<Offering?> GetOfferingByIdAsync(int id);
-    Task<IEnumerable<Offering>> GetAllOfferingsAsync();
-    Task<IEnumerable<Offering>> GetActiveOfferingsAsync();
-    Task<Offering> CreateOfferingAsync(CreateOfferingRequest request, string createdBy);
-    Task<bool> UpdateOfferingAsync(Offering offering);
-    Task<bool> DeleteOfferingAsync(int id);
-    Task<bool> DeactivateExpiredOfferingsAsync();
-
-}
 public interface IScheduleService
 {
     Task<Schedule?> GetScheduleByIdAsync(int id);

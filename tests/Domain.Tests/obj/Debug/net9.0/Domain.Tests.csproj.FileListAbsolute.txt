@@ -7,6 +7,7 @@
 /Users/william 1/Desktop/CRM/tests/Domain.Tests/bin/Debug/net9.0/Domain.Tests.runtimeconfig.json
 /Users/william 1/Desktop/CRM/tests/Domain.Tests/bin/Debug/net9.0/Domain.Tests.dll
 /Users/william 1/Desktop/CRM/tests/Domain.Tests/bin/Debug/net9.0/Domain.Tests.pdb
+/Users/william 1/Desktop/CRM/tests/Domain.Tests/bin/Debug/net9.0/FluentAssertions.dll
 /Users/william 1/Desktop/CRM/tests/Domain.Tests/bin/Debug/net9.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
 /Users/william 1/Desktop/CRM/tests/Domain.Tests/bin/Debug/net9.0/Microsoft.TestPlatform.CoreUtilities.dll
 /Users/william 1/Desktop/CRM/tests/Domain.Tests/bin/Debug/net9.0/Microsoft.TestPlatform.PlatformAbstractions.dll

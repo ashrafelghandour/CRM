@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "++Iyf23Z0gc=",
+  "dgSpecHash": "ma/gtc6kQes=",
   "success": true,
   "projectFilePath": "/Users/william 1/Desktop/CRM/tests/Domain.Tests/Domain.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/william 1/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512",
+    "/Users/william 1/.nuget/packages/fluentassertions/8.8.0/fluentassertions.8.8.0.nupkg.sha512",
     "/Users/william 1/.nuget/packages/microsoft.codecoverage/17.12.0/microsoft.codecoverage.17.12.0.nupkg.sha512",
     "/Users/william 1/.nuget/packages/microsoft.net.test.sdk/17.12.0/microsoft.net.test.sdk.17.12.0.nupkg.sha512",
     "/Users/william 1/.nuget/packages/microsoft.testplatform.objectmodel/17.12.0/microsoft.testplatform.objectmodel.17.12.0.nupkg.sha512",

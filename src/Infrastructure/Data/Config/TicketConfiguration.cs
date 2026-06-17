@@ -7,8 +7,11 @@ namespace Infrastructure.Data.Configurations;
 
 public class TicketConfiguration : IEntityTypeConfiguration<Ticket>
 {
+      
     public void Configure(EntityTypeBuilder<Ticket> builder)
-    {
+    { 
+
+
         builder.HasKey(t => t.Id);
 
         builder.Property(t => t.Title)
@@ -60,7 +63,6 @@ public class TicketConfiguration : IEntityTypeConfiguration<Ticket>
             .WithOne(tc => tc.Ticket)
             .HasForeignKey(tc => tc.TicketId)
             .OnDelete(DeleteBehavior.Cascade);
-
         // Indexes
         builder.HasIndex(t => t.Status);
         builder.HasIndex(t => t.Priority);
